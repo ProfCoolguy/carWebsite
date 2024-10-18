@@ -809,6 +809,29 @@ animation: fill 1s ease-in-out forwards;
       width: 30%;
     }
   }
+@media screen and (max-width: 900px) {
+    .container .card img, .container .card .content {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .hero .text h1 {
+        font-size: 40px; /* Decrease text size for smaller screens */
+    }
+    .hero .text h1 span {
+        font-size: 60px; /* Adjust to fit smaller screens */
+    }
+    .hero .text p {
+        font-size: 14px; /* Smaller text for readability on small screens */
+    }
+    .container .card img, .container .card .content {
+        width: 100%; /* Ensure elements stack on top of each other */
+    }
+    .container .card {
+        flex-direction: column;
+    }
+}
+
 
 @keyframes fill {
     40%{
